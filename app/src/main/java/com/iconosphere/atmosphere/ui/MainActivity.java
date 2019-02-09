@@ -19,6 +19,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import android.view.Menu;
@@ -101,5 +102,9 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void showFragmentWithTransition(Fragment currentFragment, Fragment newFragment, String tag, View sharedView, String sharedElementName) {
+
     }
 }
